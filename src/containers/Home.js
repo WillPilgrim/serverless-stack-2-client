@@ -56,7 +56,7 @@ export default class Home extends Component {
               onClick={this.handleNoteClick}
             >
               <h4>
-                <b>{"\uFF0B"}</b> Create a new note
+                <b>{"\uFF0B"}</b> Create a new account
               </h4>
             </ListGroupItem>
     );
@@ -65,8 +65,8 @@ export default class Home extends Component {
   renderLander() {
     return (
       <div className="lander">
-        <h1>Scratch</h1>
-        <p>A simple note taking app</p>
+        <h1>Lydia</h1>
+        <p>Take control of your money</p>
         <div>
           <Link to="/login" className="btn btn-info btn-lg">
             Login
@@ -82,7 +82,7 @@ export default class Home extends Component {
   renderNotes() {
     return (
       <div className="notes">
-        <PageHeader>Your Notes</PageHeader>
+        <PageHeader>Your Accounts</PageHeader>
         <ListGroup>
           {!this.state.isLoading && this.renderNotesList(this.state.notes)}
         </ListGroup>

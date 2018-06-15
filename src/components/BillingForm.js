@@ -56,13 +56,13 @@ class BillingForm extends Component {
     return (
       <form className="BillingForm" onSubmit={this.handleSubmitClick}>
         <FormGroup bsSize="large" controlId="storage">
-          <ControlLabel>Storage</ControlLabel>
+          <ControlLabel>Accounts</ControlLabel>
           <FormControl
             min="0"
             type="number"
             value={this.state.storage}
             onChange={this.handleFieldChange}
-            placeholder="Number of notes to store"
+            placeholder="Maximum number of accounts"
           />
         </FormGroup>
         <hr />
